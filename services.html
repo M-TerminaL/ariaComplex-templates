@@ -1,0 +1,1189 @@
+<!DOCTYPE html>
+<html lang="FA-IR" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مجموعه فرهنگی ورزشی آریا</title>
+
+    <!-- Fav Icon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./images/favIcon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favIcon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/favIcon/favicon-16x16.png">
+    <link rel="manifest" href="./images/favIcon/site.webmanifest">
+    <!-- End Of Fav Icon -->
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" /> <!--swiper Js -->
+    <link rel="stylesheet" href="./css/bootstrap-icons.css"> <!-- Bootstrap Icon -->
+    <link rel="stylesheet" href="./css/bootstrap.rtl.min.css"> <!-- Bootstrap 5 -->
+    <link rel="stylesheet" href="./css/main.css"> <!-- main style of this project -->
+    <link rel="stylesheet" href="./css/style.css"> <!-- Iran Yekan X Font Styles -->
+</head>
+
+
+<body>
+
+
+    <div class="text-center" id="preloader-container">
+        <img id="preloader" src="./images/preloader-gif/old.gif" alt="">
+    </div>
+
+    <nav class="navbar-mobile d-lg-none" id="navbar-mob">
+        <div id="close" class="navbar-close">
+            <span class="nav-close">
+                <i class="bi bi-x"></i>
+            </span>
+        </div>
+        <div class="navbar-header d-flex justify-content-center align-items-center">
+            <button id="menu">منو</button>
+            <button id="category">خدمات</button>
+        </div>
+        <div class="navbar-list-box">
+            <ul id="menu-items">
+                <li><a href="" class="navbar-link"><i class="bi bi-house-fill"></i>خانه</a></li>
+                <li><a href="" class="navbar-link"><i class="bi bi-list-columns"></i>لیست قیمت ها</a></li>
+                <li><a href="" class="navbar-link"><i class="bi bi-chat-right-dots-fill"></i>تماس با ما</a></li>
+                <li><a href="" class="navbar-link"><i class="bi bi-info-circle-fill"></i>درباره ما</a></li>
+                <li><a href="" class="navbar-link"><i class="bi bi-box-arrow-in-right"></i>ورود</a></li>
+                <li><a href="" class="navbar-link"><i class="bi bi-person-fill-add"></i>ثبت نام</a></li>
+            </ul>
+
+            <ul id="category-items">
+                <li><a href="" class="navbar-link">استخر</a></li>
+                <li><a href="" class="navbar-link">بدنسازی</a></li>
+                <li><a href="" class="navbar-link">ماساژ</a></li>
+                <li><a href="" class="navbar-link">لیزر</a></li>
+                <li><a href="" class="navbar-link">گیم نت</a></li>
+                <li><a href="" class="navbar-link">فیزیو تراپی</a></li>
+                <li><a href="" class="navbar-link">خدمات VIP</a></li>
+                <li><a href="" class="navbar-link">دوفیکا و تندرستی</a></li>
+                <li><a href="" class="navbar-link">SPA</a></li>
+                <li><a href="" class="navbar-link">آب درمانی</a></li>
+                <li><a href="" class="navbar-link">نمک درمانی</a></li>
+            </ul>
+        </div>
+
+    </nav>
+    <header id="header"> <!-- Header -->
+        <div class="notification-bar text-center">
+            <p> شماره تماس : 02144611614 - 02144611614</p>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-6">
+                    <div class="logo d-flex">
+                        <a href="#">
+                            <img src="./images/logo/logo_aria_complex_prev_ui.png" alt="مجموعه ورزشی آریا">
+                        </a>
+                        <div class="divider"></div>
+                        <div class="slogan">
+                            <h2 class="text-xlarge text-bold">باشگاه لوکس آریا</h2>
+                            <h6 class=".text-UltraLight">کامل ترین مجموعه ورزشی</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 d-lg-none responsive-menu">
+                    <button class="btn-menu-responsive" id="menu-btn">
+
+                        <i class="bi bi-list"></i>
+                    </button>
+
+                </div>
+                <div class="d-none d-lg-block col-lg-6 position-relative">
+                    <div class="header-panel-box">
+                        <div class="header-btn">
+                            <a href="" class="btn-main btn-card-register "><i
+                                    class="bi bi-credit-card-2-front-fill fs-4"></i>ثبت نام</a>
+                        </div>
+                        <div class="header-btn">
+                            <a href="" class="btn-main btn-sign-in"><i class="bi bi-person-fill fs-4"></i>ورود</a>
+                        </div>
+
+                        <button type="button" class="btn btn-primary position-relative">
+                            <i class="bi bi-basket-fill"></i>
+                            <span
+                                class="position-absolute top-0 start-100 translate-middle p-1 bg-danger border border-light rounded-circle badge badge-font">
+                                <span class="visually-hidden">New alerts</span>7
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </header>
+
+
+    <!-- menu in header  position sticky / parent elem should be receive this property -->
+    <div class="mega-menu-parent d-none d-lg-block position-sticky top-0 ">
+        <div class="container-fluid">
+            <div class="header-top-menu align-items-center">
+                <div class="row">
+                    <div class="col-lg-7">
+                        <div class="header-top-menu-right">
+                            <ul class="menu-list">
+                                <li id="no-sub-home"><a href="" id="home">صفحه اصلی</a><span
+                                        class="d-block underline1"></span></li>
+                                <li>
+                                    <a href="javascript:void(0)" id="services">خدمات</a><span
+                                        class="d-block underline2"></span>
+                                </li>
+                                <li id="no-sub-price"><a href="" id="prices">لیست قیمت ها</a><span
+                                        class="d-block underline3"></span></li>
+                                <li id="no-sub-contact"><a href="" id="contact">تماس با ما</a><span
+                                        class="d-block underline4"></span></li>
+                                <li id="no-sub-about"><a href="" id="about">درباره ما</a><span
+                                        class="d-block underline5"></span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="social-media-phone-box d-flex justify-content-center align-items-center">
+                            <div class="phone-number">
+                                <p>
+                                    021-44611614 - 021-44611614 <i class="bi bi-telephone-inbound-fill tel"></i>
+                                </p>
+                            </div>
+                            <div class="social-media-box d-flex justify-content-center">
+                                <div class="media-box">
+                                    <a href="" class="media1">
+                                        <i class="bi bi-whatsapp"></i>
+                                    </a>
+                                </div>
+                                <div class="media-box">
+                                    <a href="" class="media2">
+                                        <i class="bi bi-telegram"></i>
+                                    </a>
+                                </div>
+                                <div class="media-box">
+                                    <a href="" class="media3">
+                                        <i class="bi bi-instagram"></i>
+                                    </a>
+                                </div>
+                                <div class="media-box">
+                                    <a href="" class="media4">
+                                        <i class="bi bi-geo-alt-fill"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="svc-list" id="sub-menu">
+            <div class="svc-box-box">
+                <ul>
+                    <li><a href="">استخر</a></li>
+                    <li><a href="">باشگاه بدنسازی بانوان</a></li>
+                    <li><a href="">VIP</a></li>
+                    <li><a href="">آب درمانی</a></li>
+                    <li><a href="">دوفیکا</a></li>
+                    <li><a href="">سالن چند منظوره</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- end of header -->
+    <!-- end menu in header  position sticky / parent elem should be receive this property -->
+
+
+    <main>
+        <!-- Section -->
+        <div class="section mt-lg-3 ps-lg-4 pe-lg-4">
+            <div class="header-img-service-box position-relative">
+                <img src="./images/pool/bg-pool.jpg" alt="" class="img-fluid ">
+                <div class="img-content-services position-absolute top-50 start-50 translate-middle">
+                    <h3 class="title-img text-center ">استخر بزرگ آریـــــــا</h3>
+                    <h4 class="des-img text-center">بهترین استخر در غرب تهران</h4>
+                </div>
+            </div>
+        </div>
+
+        <section class="mt-2 mb-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="text-center">
+                            <img src="./images/pool-ico.png" alt="">
+                        </div>
+            
+                        <div class="divider-svc">
+                            <img src="./images/arrow.png" alt="">
+                        </div>
+                        <h1 class="title-svc-items">امکانات بخش استخر</h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6 col-lg-4 gy-4">
+                        <div class="price-item-list-container svc-items">
+                            <h2 class="text-center">استخر</h2>
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-4 gy-4">
+                        <div class="price-item-list-container svc-items">
+                            <h2 class="text-center">سونا بخار</h2>
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-4 gy-4">
+                        <div class="price-item-list-container svc-items">
+                            <h2 class="text-center">سونا خشک</h2>
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-4 gy-4">
+                        <div class="price-item-list-container svc-items">
+                            <h2 class="text-center">جکوزی</h2>
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-4 gy-4">
+                        <div class="price-item-list-container svc-items">
+                            <h2 class="text-center">بیلیارد</h2>
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-4 gy-4">
+                        <div class="price-item-list-container svc-items">
+                            <h2 class="text-center">استخر کودکان</h2>
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-4 gy-4">
+                        <div class="price-item-list-container svc-items">
+                            <h2 class="text-center">تونل باران</h2>
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-4 gy-4">
+                        <div class="price-item-list-container svc-items">
+                            <h2 class="text-center">ماساژ</h2>
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-4 gy-4">
+                        <div class="price-item-list-container svc-items">
+                            <h2 class="text-center">کافی شاپ</h2>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+
+        <div class="mb-4">
+            <h3 class="text-center text-extrabold title-svc-box">معرفی خدمات ما</h3>
+            <div class="divider-svc">
+                <img src="./images/arrow.png" alt="">
+            </div>
+        </div>
+
+
+        <section class="introduce-box mt-5 mb-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="img-service-ico">
+                            <img src="./images/services-icons/masaj.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-12 mt-5">
+                        <h2 class="text-center text-bold">ماساژ</h2>
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col-12">
+                        <p class="text-center text-bold">
+                            راه حلی عالی برای رهایی از استرس و دردهای عضلانی است،گرفتگی و تنش عضلات بدن را رفع میکند. از
+                            فواید ماساژ می توان به افزایش قابلیت ارتجاعی بافت های بدن،بهبود جریان خون و لنف،تقویت سیستم
+                            عصبی
+                            و ایمنی بدن و نهایتاً خواب آرام اشاره کرد.
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-md-6 col-lg-4 gy-4">
+                        <div class="card services-card">
+                            <div class="card-header">
+                                <h5 class="card-title text-center text-extrabold mt-2">ماساژ بهبود دهنده درد (درمانی)
+                                </h5>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text text-center">متخصصان با توجه به ناحیه ای که دچار گرفتگی یا دچار
+                                    عارضه
+                                    شده را به
+                                    منظور کاهش درد،جهت پیدا کردن منشا درد،مفاصل بدن را ماساژ می دهند و طی ۱ تا ۴ جلسه
+                                    گرفتگی
+                                    را برطرف میکنند
+                                    علاوه بر این مجموعه آریا این امکان را فراهم کرده که مراجعین توسط پزشک ویزیت میشوند و
+                                    برنامه ی درمانی از طریق پزشک به متخصص ماساژ ارائه می شود.</p>
+                            </div>
+                            <div class="card-footer">
+                                <div class="star-container text-center">
+                                    <span><i class="bi bi-star-fill"></i></span>
+                                    <span><i class="bi bi-star-fill"></i></span>
+                                    <span><i class="bi bi-star-fill"></i></span>
+                                    <span><i class="bi bi-star-fill"></i></span>
+                                    <span><i class="bi bi-star-fill"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="col-12 col-md-6 col-lg-4 gy-4">
+                        <div class="card services-card">
+                            <div class="card-header">
+                                <h5 class="card-title text-center text-extrabold mt-2">ماساژ بهبود دهنده درد (درمانی)
+                                </h5>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text text-center">متخصصان با توجه به ناحیه ای که دچار گرفتگی یا دچار
+                                    عارضه
+                                    شده را به
+                                    منظور کاهش درد،جهت پیدا کردن منشا درد،مفاصل بدن را ماساژ می دهند و طی ۱ تا ۴ جلسه
+                                    گرفتگی
+                                    را برطرف میکنند
+                                    علاوه بر این مجموعه آریا این امکان را فراهم کرده که مراجعین توسط پزشک ویزیت میشوند و
+                                    برنامه ی درمانی از طریق پزشک به متخصص ماساژ ارائه می شود.</p>
+                            </div>
+                            <div class="card-footer">
+                                <div class="star-container text-center">
+                                    <span><i class="bi bi-star-fill"></i></span>
+                                    <span><i class="bi bi-star-fill"></i></span>
+                                    <span><i class="bi bi-star-fill"></i></span>
+                                    <span><i class="bi bi-star-fill"></i></span>
+                                    <span><i class="bi bi-star-fill"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+                    <div class="col-12 col-md-6 col-lg-4 gy-4">
+                        <div class="card services-card">
+                            <div class="card-header">
+                                <h5 class="card-title text-center text-extrabold mt-2">ماساژ بهبود دهنده درد (درمانی)
+                                </h5>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text text-center">متخصصان با توجه به ناحیه ای که دچار گرفتگی یا دچار
+                                    عارضه
+                                    شده را به
+                                    منظور کاهش درد،جهت پیدا کردن منشا درد،مفاصل بدن را ماساژ می دهند و طی ۱ تا ۴ جلسه
+                                    گرفتگی
+                                    را برطرف میکنند
+                                    علاوه بر این مجموعه آریا این امکان را فراهم کرده که مراجعین توسط پزشک ویزیت میشوند و
+                                    برنامه ی درمانی از طریق پزشک به متخصص ماساژ ارائه می شود.</p>
+                            </div>
+                            <div class="card-footer">
+                                <div class="star-container text-center">
+                                    <span><i class="bi bi-star-fill"></i></span>
+                                    <span><i class="bi bi-star-fill"></i></span>
+                                    <span><i class="bi bi-star-fill"></i></span>
+                                    <span><i class="bi bi-star-fill"></i></span>
+                                    <span><i class="bi bi-star-fill"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+                    <div class="col-12 col-md-6 col-lg-4 gy-4">
+                        <div class="card services-card">
+                            <div class="card-header">
+                                <h5 class="card-title text-center text-extrabold mt-2">ماساژ بهبود دهنده درد (درمانی)
+                                </h5>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text text-center">متخصصان با توجه به ناحیه ای که دچار گرفتگی یا دچار
+                                    عارضه
+                                    شده را به
+                                    منظور کاهش درد،جهت پیدا کردن منشا درد،مفاصل بدن را ماساژ می دهند و طی ۱ تا ۴ جلسه
+                                    گرفتگی
+                                    را برطرف میکنند
+                                    علاوه بر این مجموعه آریا این امکان را فراهم کرده که مراجعین توسط پزشک ویزیت میشوند و
+                                    برنامه ی درمانی از طریق پزشک به متخصص ماساژ ارائه می شود.</p>
+                            </div>
+                            <div class="card-footer">
+                                <div class="star-container text-center">
+                                    <span><i class="bi bi-star-fill"></i></span>
+                                    <span><i class="bi bi-star-fill"></i></span>
+                                    <span><i class="bi bi-star-fill"></i></span>
+                                    <span><i class="bi bi-star-fill"></i></span>
+                                    <span><i class="bi bi-star-fill"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+                    <div class="col-12 col-md-6 col-lg-4 gy-4">
+                        <div class="card services-card">
+                            <div class="card-header">
+                                <h5 class="card-title text-center text-extrabold mt-2">ماساژ بهبود دهنده درد (درمانی)
+                                </h5>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text text-center">متخصصان با توجه به ناحیه ای که دچار گرفتگی یا دچار
+                                    عارضه
+                                    شده را به
+                                    منظور کاهش درد،جهت پیدا کردن منشا درد،مفاصل بدن را ماساژ می دهند و طی ۱ تا ۴ جلسه
+                                    گرفتگی
+                                    را برطرف میکنند
+                                    علاوه بر این مجموعه آریا این امکان را فراهم کرده که مراجعین توسط پزشک ویزیت میشوند و
+                                    برنامه ی درمانی از طریق پزشک به متخصص ماساژ ارائه می شود.</p>
+                            </div>
+                            <div class="card-footer">
+                                <div class="star-container text-center">
+                                    <span><i class="bi bi-star-fill"></i></span>
+                                    <span><i class="bi bi-star-fill"></i></span>
+                                    <span><i class="bi bi-star-fill"></i></span>
+                                    <span><i class="bi bi-star-fill"></i></span>
+                                    <span><i class="bi bi-star-fill"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+                    <div class="col-12 col-md-6 col-lg-4 gy-4">
+                        <div class="card services-card">
+                            <div class="card-header">
+                                <h5 class="card-title text-center text-extrabold mt-2">ماساژ بهبود دهنده درد (درمانی)
+                                </h5>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text text-center">متخصصان با توجه به ناحیه ای که دچار گرفتگی یا دچار
+                                    عارضه
+                                    شده را به
+                                    منظور کاهش درد،جهت پیدا کردن منشا درد،مفاصل بدن را ماساژ می دهند و طی ۱ تا ۴ جلسه
+                                    گرفتگی
+                                    را برطرف میکنند
+                                    علاوه بر این مجموعه آریا این امکان را فراهم کرده که مراجعین توسط پزشک ویزیت میشوند و
+                                    برنامه ی درمانی از طریق پزشک به متخصص ماساژ ارائه می شود.</p>
+                            </div>
+                            <div class="card-footer">
+                                <div class="star-container text-center">
+                                    <span><i class="bi bi-star-fill"></i></span>
+                                    <span><i class="bi bi-star-fill"></i></span>
+                                    <span><i class="bi bi-star-fill"></i></span>
+                                    <span><i class="bi bi-star-fill"></i></span>
+                                    <span><i class="bi bi-star-fill"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="introduce-box mt-5 mb-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="img-service-ico">
+                            <img src="./images/services-icons/masaj.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-12 mt-5">
+                        <h2 class="text-center text-bold">ماساژ</h2>
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col-12">
+                        <p class="text-center text-bold">
+                            راه حلی عالی برای رهایی از استرس و دردهای عضلانی است،گرفتگی و تنش عضلات بدن را رفع میکند. از
+                            فواید ماساژ می توان به افزایش قابلیت ارتجاعی بافت های بدن،بهبود جریان خون و لنف،تقویت سیستم
+                            عصبی
+                            و ایمنی بدن و نهایتاً خواب آرام اشاره کرد.
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-md-6 col-lg-4 gy-4">
+                        <div class="card services-card">
+                            <div class="card-header">
+                                <h5 class="card-title text-center text-extrabold mt-2">ماساژ بهبود دهنده درد (درمانی)
+                                </h5>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text text-center">متخصصان با توجه به ناحیه ای که دچار گرفتگی یا دچار
+                                    عارضه
+                                    شده را به
+                                    منظور کاهش درد،جهت پیدا کردن منشا درد،مفاصل بدن را ماساژ می دهند و طی ۱ تا ۴ جلسه
+                                    گرفتگی
+                                    را برطرف میکنند
+                                    علاوه بر این مجموعه آریا این امکان را فراهم کرده که مراجعین توسط پزشک ویزیت میشوند و
+                                    برنامه ی درمانی از طریق پزشک به متخصص ماساژ ارائه می شود.</p>
+                            </div>
+                            <div class="card-footer">
+                                <div class="star-container text-center">
+                                    <span><i class="bi bi-star-fill"></i></span>
+                                    <span><i class="bi bi-star-fill"></i></span>
+                                    <span><i class="bi bi-star-fill"></i></span>
+                                    <span><i class="bi bi-star-fill"></i></span>
+                                    <span><i class="bi bi-star-fill"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="col-12 col-md-6 col-lg-4 gy-4">
+                        <div class="card services-card">
+                            <div class="card-header">
+                                <h5 class="card-title text-center text-extrabold mt-2">ماساژ بهبود دهنده درد (درمانی)
+                                </h5>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text text-center">متخصصان با توجه به ناحیه ای که دچار گرفتگی یا دچار
+                                    عارضه
+                                    شده را به
+                                    منظور کاهش درد،جهت پیدا کردن منشا درد،مفاصل بدن را ماساژ می دهند و طی ۱ تا ۴ جلسه
+                                    گرفتگی
+                                    را برطرف میکنند
+                                    علاوه بر این مجموعه آریا این امکان را فراهم کرده که مراجعین توسط پزشک ویزیت میشوند و
+                                    برنامه ی درمانی از طریق پزشک به متخصص ماساژ ارائه می شود.</p>
+                            </div>
+                            <div class="card-footer">
+                                <div class="star-container text-center">
+                                    <span><i class="bi bi-star-fill"></i></span>
+                                    <span><i class="bi bi-star-fill"></i></span>
+                                    <span><i class="bi bi-star-fill"></i></span>
+                                    <span><i class="bi bi-star-fill"></i></span>
+                                    <span><i class="bi bi-star-fill"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+                    <div class="col-12 col-md-6 col-lg-4 gy-4">
+                        <div class="card services-card">
+                            <div class="card-header">
+                                <h5 class="card-title text-center text-extrabold mt-2">ماساژ بهبود دهنده درد (درمانی)
+                                </h5>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text text-center">متخصصان با توجه به ناحیه ای که دچار گرفتگی یا دچار
+                                    عارضه
+                                    شده را به
+                                    منظور کاهش درد،جهت پیدا کردن منشا درد،مفاصل بدن را ماساژ می دهند و طی ۱ تا ۴ جلسه
+                                    گرفتگی
+                                    را برطرف میکنند
+                                    علاوه بر این مجموعه آریا این امکان را فراهم کرده که مراجعین توسط پزشک ویزیت میشوند و
+                                    برنامه ی درمانی از طریق پزشک به متخصص ماساژ ارائه می شود.</p>
+                            </div>
+                            <div class="card-footer">
+                                <div class="star-container text-center">
+                                    <span><i class="bi bi-star-fill"></i></span>
+                                    <span><i class="bi bi-star-fill"></i></span>
+                                    <span><i class="bi bi-star-fill"></i></span>
+                                    <span><i class="bi bi-star-fill"></i></span>
+                                    <span><i class="bi bi-star-fill"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+                    <div class="col-12 col-md-6 col-lg-4 gy-4">
+                        <div class="card services-card">
+                            <div class="card-header">
+                                <h5 class="card-title text-center text-extrabold mt-2">ماساژ بهبود دهنده درد (درمانی)
+                                </h5>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text text-center">متخصصان با توجه به ناحیه ای که دچار گرفتگی یا دچار
+                                    عارضه
+                                    شده را به
+                                    منظور کاهش درد،جهت پیدا کردن منشا درد،مفاصل بدن را ماساژ می دهند و طی ۱ تا ۴ جلسه
+                                    گرفتگی
+                                    را برطرف میکنند
+                                    علاوه بر این مجموعه آریا این امکان را فراهم کرده که مراجعین توسط پزشک ویزیت میشوند و
+                                    برنامه ی درمانی از طریق پزشک به متخصص ماساژ ارائه می شود.</p>
+                            </div>
+                            <div class="card-footer">
+                                <div class="star-container text-center">
+                                    <span><i class="bi bi-star-fill"></i></span>
+                                    <span><i class="bi bi-star-fill"></i></span>
+                                    <span><i class="bi bi-star-fill"></i></span>
+                                    <span><i class="bi bi-star-fill"></i></span>
+                                    <span><i class="bi bi-star-fill"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+                    <div class="col-12 col-md-6 col-lg-4 gy-4">
+                        <div class="card services-card">
+                            <div class="card-header">
+                                <h5 class="card-title text-center text-extrabold mt-2">ماساژ بهبود دهنده درد (درمانی)
+                                </h5>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text text-center">متخصصان با توجه به ناحیه ای که دچار گرفتگی یا دچار
+                                    عارضه
+                                    شده را به
+                                    منظور کاهش درد،جهت پیدا کردن منشا درد،مفاصل بدن را ماساژ می دهند و طی ۱ تا ۴ جلسه
+                                    گرفتگی
+                                    را برطرف میکنند
+                                    علاوه بر این مجموعه آریا این امکان را فراهم کرده که مراجعین توسط پزشک ویزیت میشوند و
+                                    برنامه ی درمانی از طریق پزشک به متخصص ماساژ ارائه می شود.</p>
+                            </div>
+                            <div class="card-footer">
+                                <div class="star-container text-center">
+                                    <span><i class="bi bi-star-fill"></i></span>
+                                    <span><i class="bi bi-star-fill"></i></span>
+                                    <span><i class="bi bi-star-fill"></i></span>
+                                    <span><i class="bi bi-star-fill"></i></span>
+                                    <span><i class="bi bi-star-fill"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+                    <div class="col-12 col-md-6 col-lg-4 gy-4">
+                        <div class="card services-card">
+                            <div class="card-header">
+                                <h5 class="card-title text-center text-extrabold mt-2">ماساژ بهبود دهنده درد (درمانی)
+                                </h5>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text text-center">متخصصان با توجه به ناحیه ای که دچار گرفتگی یا دچار
+                                    عارضه
+                                    شده را به
+                                    منظور کاهش درد،جهت پیدا کردن منشا درد،مفاصل بدن را ماساژ می دهند و طی ۱ تا ۴ جلسه
+                                    گرفتگی
+                                    را برطرف میکنند
+                                    علاوه بر این مجموعه آریا این امکان را فراهم کرده که مراجعین توسط پزشک ویزیت میشوند و
+                                    برنامه ی درمانی از طریق پزشک به متخصص ماساژ ارائه می شود.</p>
+                            </div>
+                            <div class="card-footer">
+                                <div class="star-container text-center">
+                                    <span><i class="bi bi-star-fill"></i></span>
+                                    <span><i class="bi bi-star-fill"></i></span>
+                                    <span><i class="bi bi-star-fill"></i></span>
+                                    <span><i class="bi bi-star-fill"></i></span>
+                                    <span><i class="bi bi-star-fill"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="instruction-buy-package-section">
+            <article>
+                <div class="container">
+                    <div class="row contact-box align-items-center">
+                        <div class="col-12 col-md-3 contact-1">
+                            <img src="./images/nama-building/contact-us.jpg" alt="">
+                        </div>
+                        <div class="col-12 col-md-6 des-contact mt-3" id="instruction-box">
+                            <h2>منتظر حضور گرمتان هستیم.</h2>
+                            <div class="d-flex justify-content-center mb-2">
+                                <img src="./images/arrow.png" alt="" class="d-block">
+                            </div>
+                            <h4>باشگاه تشریفاتی آریا</h4>
+                            <p>شما می توانید به صورت آنلاین بلیط تهیه کنید و ثبت نام نمایید</p>
+                            <p>بعد از اضافه کردن پکیج مورد نظر به سبد خرید وارد حساب کاربری خود شده و از قسمت سبدخرید
+                                وارد درگاه شوید و بعد از تکمیل فرایند خرید، کد رهگیری را به خاطر بسپارید</p>
+                            <p class="alert alert-danger">به همراه داشتن <span class="text-danger text-bold">کد
+                                    رهگیری</span> الزامیست.</p>
+                        </div>
+                        <div class="col-12 col-md-3 contact-1">
+                            <img src="./images/nama-building/contact1.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+
+
+
+        <section class="table-price-box" id="fix-overflow">
+            <div class="table-box mb-5">
+                <div class="title-table">
+                    <h2 class="text-center">لیست قیمت ها</h2>
+
+                    <div class="discount-box-notif-div">
+                        <span class="discount-notif-box">
+                            70 درصد تخفیف
+                        </span>
+                    </div>
+
+                </div>
+
+
+                <div class="main-table mt-2">
+                    <div class="divider-svc text-center mb-3">
+                        <img src="./images/arrow.png" alt="">
+                    </div>
+
+
+
+                    <div class="text-center mt-4 mb-3">
+                        <h3 class="text-bold">آموزشی</h3>
+                    </div>
+                    <table class="table">
+                        <thead class="table-dark">
+                            <tr>
+                                <th scope="col">خدمات</th>
+                                <th scope="col">توضیحات</th>
+                                <th scope="col">قیمت (ریال)</th>
+                                <th scope="col">خرید</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+
+                                <td>پکیج طلایی آریا</td>
+                                <td>عضویت 100 جلسه ای ، 10جلسه ماساژ یک ساعته ، 3 وان مراکشی</td>
+                                <td class="text-extrabold">28/800/000</td>
+                                <td>
+                                    <button>
+                                        <i class="bi bi-cart-plus"></i>
+                                    </button>
+                                </td>
+                            </tr>
+
+
+
+                            <tr>
+
+                                <td>پکیج طلایی آریا</td>
+                                <td>عضویت 100 جلسه ای ، 10جلسه ماساژ یک ساعته ، 3 وان مراکشی</td>
+                                <td class="text-extrabold">28/800/000</td>
+                                <td>
+                                    <button>
+                                        <i class="bi bi-cart-plus"></i>
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+
+                                <td>پکیج طلایی آریا</td>
+                                <td>عضویت 100 جلسه ای ، 10جلسه ماساژ یک ساعته ، 3 وان مراکشی</td>
+                                <td class="text-extrabold">28/800/000</td>
+                                <td>
+                                    <button>
+                                        <i class="bi bi-cart-plus"></i>
+                                    </button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <div class="text-center mt-4 mb-3">
+                        <h3 class="text-bold">تک جلسه ای</h3>
+                    </div>
+                    <table class="table">
+                        <thead class="table-dark">
+                            <tr>
+                                <th scope="col">خدمات</th>
+                                <th scope="col">توضیحات</th>
+                                <th scope="col">قیمت (ریال)</th>
+                                <th scope="col">خرید</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+
+                                <td>پکیج طلایی آریا</td>
+                                <td>عضویت 100 جلسه ای ، 10جلسه ماساژ یک ساعته ، 3 وان مراکشی</td>
+                                <td class="text-extrabold">28/800/000</td>
+                                <td>
+                                    <button>
+                                        <i class="bi bi-cart-plus"></i>
+                                    </button>
+                                </td>
+                            </tr>
+
+
+
+                            <tr>
+
+                                <td>پکیج طلایی آریا</td>
+                                <td>عضویت 100 جلسه ای ، 10جلسه ماساژ یک ساعته ، 3 وان مراکشی</td>
+                                <td class="text-extrabold">28/800/000</td>
+                                <td>
+                                    <button>
+                                        <i class="bi bi-cart-plus"></i>
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+
+                                <td>پکیج طلایی آریا</td>
+                                <td>عضویت 100 جلسه ای ، 10جلسه ماساژ یک ساعته ، 3 وان مراکشی</td>
+                                <td class="text-extrabold">28/800/000</td>
+                                <td>
+                                    <button>
+                                        <i class="bi bi-cart-plus"></i>
+                                    </button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+        <article>
+            <div class="services-gallery-container-slider position-relative">
+                <img src="./images/pool/bg-pool.jpg" alt="">
+
+
+
+                <div class="header-title-slider">
+                    <p class="text-bold">گالری تصاویر</p>
+                    <i class="bi bi-images"></i>
+                </div>
+
+
+
+                <div class="slider-gallery mt-5">
+
+
+                    <div class="swiper mySwiper swiper-container2">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide" id="swiper-slide3">
+                                <a href="">
+                                    <img src="./images/pool/IMG_20240514_195500_563.JPG" />
+                                </a>
+                            </div>
+                            <div class="swiper-slide" id="swiper-slide3">
+                                <a href="">
+                                    <img src="./images/pool/IMG_20240514_195500_769.JPG" />
+                                </a>
+                            </div>
+                            <div class="swiper-slide" id="swiper-slide3">
+                                <a href="">
+                                    <img src="./images/pool/IMG_20240514_195500_810.JPG" />
+                                </a>
+                            </div>
+                            <div class="swiper-slide" id="swiper-slide3">
+                                <a href="">
+                                    <img src="./images/pool/IMG_20240514_195501_298.JPG" />
+                                </a>
+                            </div>
+                            <div class="swiper-slide" id="swiper-slide3">
+                                <a href="">
+                                    <img src="./images/pool/IMG_20240527_203954_977.JPG" />
+                                </a>
+                            </div>
+                            <div class="swiper-slide" id="swiper-slide3">
+                                <a href="">
+                                    <img src="./images/pool/IMG_20240527_203955_242.JPG" />
+                                </a>
+                            </div>
+                            <div class="swiper-slide" id="swiper-slide3">
+                                <a href="">
+                                    <img src="./images/pool/Locker_Room.jpg" />
+                                </a>
+                            </div>
+                            <div class="swiper-slide" id="swiper-slide3">
+                                <a href="">
+                                    <img src="./images/pool/25.jpg" />
+                                </a>
+                            </div>
+                            <div class="swiper-slide" id="swiper-slide3">
+                                <a href="">
+                                    <img src="./images/pool/Bath.jpg" />
+                                </a>
+                            </div>
+                            <div class="swiper-slide" id="swiper-slide3">
+                                <a href="">
+                                    <img src="./images/pool/bg-pool.jpg" />
+                                </a>
+                            </div>
+                            <div class="swiper-slide" id="swiper-slide3">
+                                <a href="">
+                                    <img src="./images/pool/CoffeShop.jpg" />
+                                </a>
+                            </div>
+
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+
+
+
+                </div>
+        </article>
+
+
+        <!-- ENd Section -->
+
+    </main>
+
+
+
+
+
+
+
+    <!-- Footer -->
+    <footer class="footer-container">
+        <div class="container">
+            <div class="footer-header">
+                <div class="row">
+                    <div class="col-12 col-md-4 pt-5 pb-5">
+                        <div class="single-header">
+                            <div class="header-text d-flex gap-2">
+                                <i class="bi bi-geo-alt-fill fs-2"></i>
+                                <h4 class="mt-2 fs-5">
+                                    آدرس
+                                </h4>
+                            </div>
+                            <div class="ms-1">
+
+                                <span>
+                                    همت غرب - خ شهید کبیری طامه - چمران - مجموعه آریا
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4 pt-5 pb-5">
+                        <div class="single-header">
+                            <div class="header-text d-flex gap-2">
+                                <i class="bi bi-telephone-fill fs-2"></i>
+                                <h4 class="mt-2 ms-1 fs-5">
+                                    شماره تماس
+                                </h4>
+                            </div>
+                            <div class="ms-1">
+
+                                <span>
+                                    021-44611611
+                                    021-44611614
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4 pt-5 pb-5">
+                        <div class="single-header">
+                            <div class="header-text d-flex gap-2">
+                                <i class="bi bi-clock-fill fs-2"></i>
+                                <h4 class="fs-5 mt-2 ms-1">
+                                    ساعات کاری
+                                </h4>
+                            </div>
+                            <div class="ms-1">
+
+                                <span>
+                                    شنبه تا پنجشنبه 8 الی 22:30
+                                    جمعه ها 9 الی 22
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="footer-section1 pt-2 pb-5">
+                <div class="row">
+                    <div class="col-12 col-lg-4">
+                        <div class="footer-widget1 pt-lg-2">
+                            <div class="footer-logo1 justify-content-lg-center">
+                                <a href="">
+                                    <img src="./images/logo/logo_aria_complex_prev_ui.png" alt="">
+                                </a>
+                            </div>
+                            <div class="footer-text1 ms-0 mt-2 p-2">
+                                <p class="text-center text-lg-center">
+                                    مجموعه ورزشی آریا با بیش از 20 سال سابقه و با به روز ترین امکانات سعی دارد تا محیطی
+                                    امن و مرفح و لذت بخش را برای شما میزبانان عزیز فراهم آورد .
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div
+                        class="col-12 col-lg-4 mt-2 mt-lg-0 d-flex gap-5 ps-2 justify-content-center justify-content-lg-start align-items-md-center">
+
+                        <div class="footer-widget1 pt-lg-1 pb-2 ms-lg-3">
+                            <div class="footer-link-buttons">
+                                <div class="footer-link-container">
+                                    <a href="">خدمات</a>
+                                    <a href="">خرید عضویت</a>
+                                    <a href="">تماس با ما</a>
+                                    <a href="">درباره ما</a>
+                                </div>
+                                <div
+                                    class="pt-5 social-media-icons-footer1 text-center d-flex justify-content-center gap-3">
+                                    <a href=""><i class="bi bi-whatsapp"></i></a>
+                                    <a href=""><i class="bi bi-telegram"></i></a>
+                                    <a href=""><i class="bi bi-instagram"></i></a>
+                                    <a href=""><i class="bi bi-youtube"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="col-12 col-lg-4 mb-5 pt-3">
+
+                        <div
+                            class="enamad-samandehi-logo d-flex justify-content-center justify-content-lg-start mt-5 mt-lg-4 gap-2">
+                            <div class="e-logo">
+                                <img width="120" src="./images/enamad-samandehi/enamad-samandehi.png" alt="">
+                            </div>
+                            <div class="e-logo">
+                                <img width="120" src="./images/enamad-samandehi/ENAMADpng.parspng.com_.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="footer-footer">
+                <div class="footer-copy-right">
+                    <div class="row">
+                        <div class="col-12 col-md-6 text-center text-md-start">
+                            <p>
+                                تمامی حقوق این سایت مربوط به مجموعه فرهنگی ورزشی آریا می باشد.
+                            </p>
+                        </div>
+                        <div class="col-12 col-md-6 text-center text-md-end">
+                            طراحی و اجرا : علیرضا بابایی - 09123101457
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+
+
+
+        <div class="help-footer-menu-mobile d-lg-none">
+            <div>.</div>
+            <div>.</div>
+            <div>.</div>
+            <div>.</div>
+            <div>.</div>
+            <div>.</div>
+        </div>
+
+
+
+    </footer>
+    <!--end footer-->
+
+
+
+    <!-- mobile menu footer -->
+    <div class="mobile-footer d-lg-none">
+        <div class="parent">
+            <div class="box box1">
+                <a href="#" class="footer-mob-link" id="arrow-up">
+                    <i class="bi bi-arrow-up-short"></i>
+                </a>
+            </div>
+            <div class="box box2">
+                <a href="" class="footer-mob-link">
+                    <i class="bi bi-list-columns"></i>
+                </a>
+            </div>
+            <div class="box box3">
+
+                <a href="" class="footer-mob-link">
+                    <i class="bi bi-person-fill-gear"></i>
+                </a>
+
+            </div>
+            <div class="box box4">
+                <a href="" class="footer-mob-link">
+                    <i class="bi bi-basket-fill"></i>
+                </a>
+            </div>
+            <div class="box box5">
+                <a href="" class="footer-mob-link">
+                    <i class="bi bi-house-door-fill"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- end mobile menu -->
+
+    <!-- whatsapp btn mobile -->
+
+    <div class="whatsapp-btn-mobile">
+        <a href="" class="_collapz_parant">
+            <i class="bi bi-whatsapp"></i>
+        </a>
+    </div>
+
+
+
+
+
+    <!-- end whatsapp btn mobile -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> <!-- swiper Js -->
+    <script src="./js/bootstrap.bundle.min.js"></script> <!-- Bootstrap Bundle -->
+    <script src="./js/app.js"></script> <!-- js Codes Of Project -->
+</body>
+
+</html>

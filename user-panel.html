@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="FA-IR" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مجموعه فرهنگی ورزشی آریا</title>
+
+    <!-- Fav Icon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./images/favIcon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favIcon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/favIcon/favicon-16x16.png">
+    <link rel="manifest" href="./images/favIcon/site.webmanifest">
+    <!-- End Of Fav Icon -->
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" /> <!--swiper Js -->
+    <link rel="stylesheet" href="./css/bootstrap-icons.css"> <!-- Bootstrap Icon -->
+    <link rel="stylesheet" href="./css/bootstrap.rtl.min.css"> <!-- Bootstrap 5 -->
+    <link rel="stylesheet" href="./css/main.css"> <!-- main style of this project -->
+    <link rel="stylesheet" href="./css/style.css"> <!-- Iran Yekan X Font Styles -->
+</head>
+
+<body>
+
+    <div class="text-center" id="preloader-container">
+        <img id="preloader" src="./images/preloader-gif/old.gif" alt="">
+    </div>
+
+    <nav class="navbar-mobile d-lg-none" id="navbar-mob">
+        <div id="close" class="navbar-close">
+            <span class="nav-close">
+                <i class="bi bi-x"></i>
+            </span>
+        </div>
+        <div class="navbar-header d-flex justify-content-center align-items-center">
+            <button id="menu">منو</button>
+            <button id="category">خدمات</button>
+        </div>
+        <div class="navbar-list-box">
+            <ul id="menu-items">
+                <li><a href="" class="navbar-link"><i class="bi bi-house-fill"></i>خانه</a></li>
+                <li><a href="" class="navbar-link"><i class="bi bi-list-columns"></i>لیست قیمت ها</a></li>
+                <li><a href="" class="navbar-link"><i class="bi bi-chat-right-dots-fill"></i>تماس با ما</a></li>
+                <li><a href="" class="navbar-link"><i class="bi bi-info-circle-fill"></i>درباره ما</a></li>
+                <li><a href="" class="navbar-link"><i class="bi bi-box-arrow-in-right"></i>ورود</a></li>
+                <li><a href="" class="navbar-link"><i class="bi bi-person-fill-add"></i>ثبت نام</a></li>
+            </ul>
+
+            <ul id="category-items">
+                <li><a href="" class="navbar-link">استخر</a></li>
+                <li><a href="" class="navbar-link">بدنسازی</a></li>
+                <li><a href="" class="navbar-link">ماساژ</a></li>
+                <li><a href="" class="navbar-link">لیزر</a></li>
+                <li><a href="" class="navbar-link">گیم نت</a></li>
+                <li><a href="" class="navbar-link">فیزیو تراپی</a></li>
+                <li><a href="" class="navbar-link">خدمات VIP</a></li>
+                <li><a href="" class="navbar-link">دوفیکا و تندرستی</a></li>
+                <li><a href="" class="navbar-link">SPA</a></li>
+                <li><a href="" class="navbar-link">آب درمانی</a></li>
+                <li><a href="" class="navbar-link">نمک درمانی</a></li>
+            </ul>
+        </div>
+
+    </nav>
+    <header id="header"> <!-- Header -->
+        <div class="notification-bar text-center">
+            <p> شماره تماس : 02144611614 - 02144611614</p>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-6">
+                    <div class="logo d-flex">
+                        <a href="#">
+                            <img src="./images/logo/logo_aria_complex_prev_ui.png" alt="مجموعه ورزشی آریا">
+                        </a>
+                        <div class="divider"></div>
+                        <div class="slogan">
+                            <h2 class="text-xlarge text-bold">باشگاه لوکس آریا</h2>
+                            <h6 class=".text-UltraLight">کامل ترین مجموعه ورزشی</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 d-lg-none responsive-menu">
+                    <button class="btn-menu-responsive" id="menu-btn">
+
+                        <i class="bi bi-list"></i>
+                    </button>
+
+                </div>
+                <div class="d-none d-lg-block col-lg-6 position-relative">
+                    <div class="header-panel-box">
+                        <div class="header-btn">
+                            <a href="" class="btn-main btn-card-register "><i
+                                    class="bi bi-credit-card-2-front-fill fs-4"></i>ثبت نام</a>
+                        </div>
+                        <div class="header-btn">
+                            <a href="" class="btn-main btn-sign-in"><i class="bi bi-person-fill fs-4"></i>ورود</a>
+                        </div>
+
+                        <button type="button" class="btn btn-primary position-relative">
+                            <i class="bi bi-basket-fill"></i>
+                            <span
+                                class="position-absolute top-0 start-100 translate-middle p-1 bg-danger border border-light rounded-circle badge badge-font">
+                                <span class="visually-hidden">New alerts</span>7
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </header>
+
+
+    <!-- menu in header  position sticky / parent elem should be receive this property -->
+    <div class="mega-menu-parent d-none d-lg-block position-sticky top-0 ">
+        <div class="container-fluid">
+            <div class="header-top-menu align-items-center">
+                <div class="row">
+                    <div class="col-lg-7">
+                        <div class="header-top-menu-right">
+                            <ul class="menu-list">
+                                <li id="no-sub-home"><a href="" id="home">صفحه اصلی</a><span class="d-block underline1"></span></li>
+                                <li>
+                                    <a href="javascript:void(0)" id="services">خدمات</a><span
+                                        class="d-block underline2"></span>
+                                </li>
+                                <li id="no-sub-price"><a href="" id="prices">لیست قیمت ها</a><span class="d-block underline3"></span></li>
+                                <li id="no-sub-contact"><a href="" id="contact">تماس با ما</a><span class="d-block underline4"></span></li>
+                                <li id="no-sub-about"><a href="" id="about">درباره ما</a><span class="d-block underline5"></span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="social-media-phone-box d-flex justify-content-center align-items-center">
+                            <div class="phone-number">
+                                <p>
+                                    021-44611614 - 021-44611614 <i class="bi bi-telephone-inbound-fill tel"></i>
+                                </p>
+                            </div>
+                            <div class="social-media-box d-flex justify-content-center">
+                                <div class="media-box">
+                                    <a href="" class="media1">
+                                        <i class="bi bi-whatsapp"></i>
+                                    </a>
+                                </div>
+                                <div class="media-box">
+                                    <a href="" class="media2">
+                                        <i class="bi bi-telegram"></i>
+                                    </a>
+                                </div>
+                                <div class="media-box">
+                                    <a href="" class="media3">
+                                        <i class="bi bi-instagram"></i>
+                                    </a>
+                                </div>
+                                <div class="media-box">
+                                    <a href="" class="media4">
+                                        <i class="bi bi-geo-alt-fill"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="svc-list" id="sub-menu">
+            <div class="svc-box-box">
+                <ul>
+                    <li><a href="">استخر</a></li>
+                    <li><a href="">باشگاه بدنسازی بانوان</a></li>
+                    <li><a href="">VIP</a></li>
+                    <li><a href="">آب درمانی</a></li>
+                    <li><a href="">دوفیکا</a></li>
+                    <li><a href="">سالن چند منظوره</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- end of header -->
+    <!-- end menu in header  position sticky / parent elem should be receive this property -->
+
+
+
+
+
+
+    <section class="mt-lg-5 mt-3">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="d-none d-lg-block col-lg-3 mb-3 mt-lg-5">
+
+                    <div class="panel-navbar-laptop">
+                        <div class="panel-nav-logo text-center">
+                            <img src="./images/logo/logo_aria_complex_prev_ui.png" alt="">
+                        </div>
+
+                        <div class="navbar-panel mt-3">
+                            <div class="nav-nav-panel">
+                                <ul>
+                                    <li class="nav-item">
+                                        <a href="" class="nav-link active">
+                                            <i class="bi bi-house-door"></i>
+                                            پروفایل
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="" class="nav-link">
+                                            <i class="bi bi-cart-check"></i>
+                                            تاریخچه پرداختی ها
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="" class="nav-link">
+                                            <i class="bi bi-cart-plus"></i>
+                                            سبد خرید من
+                                            <span class="badge bg-danger ms-1">2</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="" class="nav-link">
+                                            <i class="bi bi-envelope-paper"></i>
+                                            پیام ها
+                                            <span class="badge bg-danger ms-1">2</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="" class="nav-link"> 
+                                            <i class="bi bi-bell"></i>
+                                            اطلاعیه ها
+                                            <span class="badge bg-danger ms-1">2</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="" class="nav-link">
+                                            <i class="bi bi-chat-square-text"></i>
+                                            تیکت به پشتیبانی
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="" class="nav-link">
+                                            <i class="bi bi-upc-scan"></i>
+                                            کد تخفیف
+                                            <span class="badge bg-danger ms-1">2</span>
+                                        </a>
+                                    </li>
+                                    <div class="line-divider mt-3 mb-3"></div>
+                                    <li class="nav-item">
+                                        <a href="" class="nav-link">
+                                            <i class="bi bi-box-arrow-right"></i>
+                                            خروج از حساب کاربری
+                                        </a>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-9 mb-5 pe-0">
+
+
+
+
+                    <div class="main-profile-content">
+
+
+                        <div class="panel-header">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-12 col-md-5 ps-0">
+                                        <div class="name-profile-notif d-md-flex align-items-center">
+                                            <div class="line-design-mobile d-md-none"></div>
+                                            <div class="line-design-tablet-laptop d-none d-md-block"></div>
+                                            <p class="text-center mt-2">
+                                                علیرضا عزیز به پنل کاربری خوش آمدید
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2 text-center text-md-end notif-bell-box">
+
+                                        <a href="" class="bell-link" title="پیام جدید">
+                                            <span class="badge text-bg-danger rounded-5 p-2">2</span>
+                                            <i class="bi bi-envelope"></i>
+                                        </a>
+                                    </div>
+                                    <div class="col-12 col-md-5 text-center">
+
+                                        <div class="edit-img-name-box">
+                                            <div class="img-profile">
+                                                <img src="./images/ab-darmani/IMG_20240514_195420_240.JPG" alt="">
+
+                                            </div>
+                                            <p class="d-inline-block name-prof">محمدرضا سلماسی اجتهادی</p>
+                                            <span class="d-md-inline-block">
+                                                <a href="">
+                                                    <i class="bi bi-pencil-square"></i>
+                                                </a>
+                                            </span>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="fast-access mt-5 ms-0">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-12 col-md-6 pe-0 ps-0">
+                                        <div class="fast-access-box1">
+                                            <a href="" class="d-flex fast-link align-items-center">
+                                                <div class="green-box">
+                                                    <i class="bi bi-cart-check"></i>
+                                                </div>
+                                                <div>
+                                                    <p>
+                                                        سفارشات پرداخت شده
+                                                    </p>
+                                                    <p>5</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6 pe-0 ps-0">
+                                        <div class="fast-access-box2">
+                                            <a href="" class="d-flex fast-link align-items-center">
+                                                <div class="green-box bg-danger">
+                                                    <i class="bi bi-cart-plus"></i>
+                                                </div>
+                                                <div>
+                                                    <p>
+                                                        سبد خرید من
+                                                    </p>
+                                                    <p>2</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6 pe-0 ps-0">
+                                        <div class="fast-access-box3">
+                                            <a href="" class="d-flex fast-link align-items-center">
+                                                <div class="green-box bg-primary">
+                                                    <i class="bi bi-bell"></i>
+                                                </div>
+                                                <div>
+                                                    <p>
+                                                        اطلاعیه ها
+                                                    </p>
+                                                    <p>556</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6 pe-0 ps-0">
+                                        <div class="fast-access-box4">
+                                            <a href="" class="d-flex fast-link align-items-center">
+                                                <div class="green-box bg-secondary">
+                                                    <i class="bi bi-upc-scan"></i>
+                                                </div>
+                                                <div>
+                                                    <p>
+                                                        کد تخفیف
+                                                    </p>
+                                                    <p>1</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+
+
+                        <div class="paid-table mt-5 table-responsive">
+                            <table class="table-paid" id="last-paid">
+                                <thead class="text-center">
+                                    <tr>
+                                        <th scope="col">#</th>
+                                        <th scope="col">آیتم</th>
+                                        <th scope="col">نوع خدمات</th>
+                                        <th scope="col">تعداد</th>
+                                        <th scope="col">کد سفارش</th>
+                                        <th scope="col">تاریخ پرداخت</th>
+                                        <th scope="col">مبلغ پرداختی (ریال)</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="text-center">
+                                    <tr>
+                                        <th scope="row">1</th>
+                                        <td>عضویت 100 جلسه ای استخر با پکیج نقره ای و استاد ملی</td>
+                                        <td>استخر</td>
+                                        <td>2</td>
+                                        <td>23567212</td>
+                                        <td>28 / 05 / 1401</td>
+                                        <td>25/700/00</td>
+
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">2</th>
+                                        <td>عضویت 100 جلسه ای استخر با پکیج نقره ای و استاد ملی</td>
+                                        <td>استخر</td>
+                                        <td>2</td>
+                                        <td>23567212</td>
+                                        <td>28 / 05 / 1401</td>
+                                        <td>25/700/00</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">3</th>
+                                        <td>عضویت 100 جلسه ای استخر با پکیج نقره ای و استاد ملی</td>
+                                        <td>استخر</td>
+                                        <td>2</td>
+                                        <td>23567212</td>
+                                        <td>28 / 05 / 1401</td>
+                                        <td>25/700/00</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">4</th>
+                                        <td>عضویت 100 جلسه ای استخر با پکیج نقره ای و استاد ملی</td>
+                                        <td>استخر</td>
+                                        <td>2</td>
+                                        <td>23567212</td>
+                                        <td>28 / 05 / 1401</td>
+                                        <td>25/700/00</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">5</th>
+                                        <td>عضویت 100 جلسه ای استخر با پکیج نقره ای و استاد ملی</td>
+                                        <td>استخر</td>
+                                        <td>2</td>
+                                        <td>23567212</td>
+                                        <td>28 / 05 / 1401</td>
+                                        <td>25/700/00</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <button class="btn btn-primary menu-panel-dashboard d-lg-none" type="button" data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+        <i class="bi bi-card-list"></i>
+        <!-- <span>منو</span> -->
+    </button>
+
+    <section id="offcanvas-content">
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
+            aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header">
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <div class="panel-navbar-laptop">
+                    <div class="panel-nav-logo text-center">
+                        <img src="./images/logo/logo_aria_complex_prev_ui.png" alt="">
+                    </div>
+
+                    <div class="navbar-panel mt-3">
+                        <div class="nav-nav-panel">
+                            <ul>
+                                <li class="nav-item">
+                                    <a href="" class="nav-link active">
+                                        <i class="bi bi-house-door"></i>
+                                        پروفایل
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="" class="nav-link">
+                                        <i class="bi bi-cart-check"></i>
+                                        تاریخچه پرداختی ها
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="" class="nav-link">
+                                        <i class="bi bi-cart-plus"></i>
+                                        سبد خرید من
+                                        <span class="badge bg-danger ms-1">2</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="" class="nav-link">
+                                        <i class="bi bi-envelope-paper"></i>
+                                        پیام ها
+                                        <span class="badge bg-danger ms-1">2</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="" class="nav-link"> 
+                                        <i class="bi bi-bell"></i>
+                                        اطلاعیه ها
+                                        <span class="badge bg-danger ms-1">2</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="" class="nav-link">
+                                        <i class="bi bi-chat-square-text"></i>
+                                        تیکت به پشتیبانی
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="" class="nav-link">
+                                        <i class="bi bi-upc-scan"></i>
+                                        کد تخفیف
+                                        <span class="badge bg-danger ms-1">2</span>
+                                    </a>
+                                </li>
+                                <div class="line-divider mt-3 mb-3"></div>
+                                <li class="nav-item">
+                                    <a href="" class="nav-link">
+                                        <i class="bi bi-box-arrow-right"></i>
+                                        خروج از حساب کاربری
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Footer -->
+    <footer class="footer-container">
+        <div class="container">
+            <div class="footer-header">
+                <div class="row">
+                    <div class="col-12 col-md-4 pt-5 pb-5">
+                        <div class="single-header">
+                            <div class="header-text d-flex gap-2">
+                                <i class="bi bi-geo-alt-fill fs-2"></i>
+                                <h4 class="mt-2 fs-5">
+                                    آدرس
+                                </h4>
+                            </div>
+                            <div class="ms-1">
+
+                                <span>
+                                    همت غرب - خ شهید کبیری طامه - چمران - مجموعه آریا
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4 pt-5 pb-5">
+                        <div class="single-header">
+                            <div class="header-text d-flex gap-2">
+                                <i class="bi bi-telephone-fill fs-2"></i>
+                                <h4 class="mt-2 ms-1 fs-5">
+                                    شماره تماس
+                                </h4>
+                            </div>
+                            <div class="ms-1">
+
+                                <span>
+                                    021-44611611
+                                    021-44611614
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4 pt-5 pb-5">
+                        <div class="single-header">
+                            <div class="header-text d-flex gap-2">
+                                <i class="bi bi-clock-fill fs-2"></i>
+                                <h4 class="fs-5 mt-2 ms-1">
+                                    ساعات کاری
+                                </h4>
+                            </div>
+                            <div class="ms-1">
+
+                                <span>
+                                    شنبه تا پنجشنبه 8 الی 22:30
+                                    جمعه ها 9 الی 22
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="footer-section1 pt-2 pb-5">
+                <div class="row">
+                    <div class="col-12 col-lg-4">
+                        <div class="footer-widget1 pt-lg-2">
+                            <div class="footer-logo1 justify-content-lg-center">
+                                <a href="">
+                                    <img src="./images/logo/logo_aria_complex_prev_ui.png" alt="">
+                                </a>
+                            </div>
+                            <div class="footer-text1 ms-0 mt-2 p-2">
+                                <p class="text-center text-lg-center">
+                                    مجموعه ورزشی آریا با بیش از 20 سال سابقه و با به روز ترین امکانات سعی دارد تا محیطی
+                                    امن و مرفح و لذت بخش را برای شما میزبانان عزیز فراهم آورد .
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div
+                        class="col-12 col-lg-4 mt-2 mt-lg-0 d-flex gap-5 ps-2 justify-content-center justify-content-lg-start align-items-md-center">
+
+                        <div class="footer-widget1 pt-lg-1 pb-2 ms-lg-3">
+                            <div class="footer-link-buttons">
+                                <div class="footer-link-container">
+                                    <a href="">خدمات</a>
+                                    <a href="">خرید عضویت</a>
+                                    <a href="">تماس با ما</a>
+                                    <a href="">درباره ما</a>
+                                </div>
+                                <div
+                                    class="pt-5 social-media-icons-footer1 text-center d-flex justify-content-center gap-3">
+                                    <a href=""><i class="bi bi-whatsapp"></i></a>
+                                    <a href=""><i class="bi bi-telegram"></i></a>
+                                    <a href=""><i class="bi bi-instagram"></i></a>
+                                    <a href=""><i class="bi bi-youtube"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="col-12 col-lg-4 mb-5 pt-3">
+
+                        <div
+                            class="enamad-samandehi-logo d-flex justify-content-center justify-content-lg-start mt-5 mt-lg-4 gap-2">
+                            <div class="e-logo">
+                                <img width="120" src="./images/enamad-samandehi/enamad-samandehi.png" alt="">
+                            </div>
+                            <div class="e-logo">
+                                <img width="120" src="./images/enamad-samandehi/ENAMADpng.parspng.com_.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="footer-footer">
+                <div class="footer-copy-right">
+                    <div class="row">
+                        <div class="col-12 col-md-6 text-center text-md-start">
+                            <p>
+                                تمامی حقوق این سایت مربوط به مجموعه فرهنگی ورزشی آریا می باشد.
+                            </p>
+                        </div>
+                        <div class="col-12 col-md-6 text-center text-md-end">
+                            طراحی و اجرا : علیرضا بابایی - 09123101457
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+
+
+
+        <div class="help-footer-menu-mobile d-lg-none">
+            <div>.</div>
+            <div>.</div>
+            <div>.</div>
+            <div>.</div>
+            <div>.</div>
+            <div>.</div>
+        </div>
+
+
+
+    </footer>
+    <!--end footer-->
+
+
+
+    <!-- mobile menu footer -->
+    <div class="mobile-footer d-lg-none">
+        <div class="parent">
+            <div class="box box1">
+                <a href="#" class="footer-mob-link" id="arrow-up">
+                    <i class="bi bi-arrow-up-short"></i>
+                </a>
+            </div>
+            <div class="box box2">
+                <a href="" class="footer-mob-link">
+                    <i class="bi bi-list-columns"></i>
+                </a>
+            </div>
+            <div class="box box3">
+
+                <a href="" class="footer-mob-link">
+                    <i class="bi bi-person-fill-gear"></i>
+                </a>
+
+            </div>
+            <div class="box box4">
+                <a href="" class="footer-mob-link">
+                    <i class="bi bi-basket-fill"></i>
+                </a>
+            </div>
+            <div class="box box5">
+                <a href="" class="footer-mob-link">
+                    <i class="bi bi-house-door-fill"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- end mobile menu -->
+
+    <!-- whatsapp btn mobile -->
+
+    <div class="whatsapp-btn-mobile">
+        <a href="" class="_collapz_parant">
+            <i class="bi bi-whatsapp"></i>
+        </a>
+    </div>
+
+
+
+
+
+    <!-- end whatsapp btn mobile -->
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> <!-- swiper Js -->
+    <script src="./js/bootstrap.bundle.min.js"></script> <!-- Bootstrap Bundle -->
+    <script src="./js/app.js"></script> <!-- js Codes Of Project -->
+</body>
+
+</html>
